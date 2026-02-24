@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cbcoi8ymnwvak"]
+
+[ext_resource type="PackedScene" uid="uid://53hcngx6c6jf" path="res://proto_controller/brackeys_3d_game_assets/dungeon_assets/props/chest_gold.glb" id="1_80m85"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3y0ns"]
+
+[node name="Node3D" type="StaticBody3D" unique_id=627751677]
+
+[node name="chest_gold2" parent="." unique_id=1979873821 instance=ExtResource("1_80m85")]
+
+[node name="chest_gold_lid" parent="chest_gold2/chest_gold" parent_id_path=PackedInt32Array(1979873821, 2032368372) index="0" unique_id=846323963]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0.5, -0.56488323)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=337917175]
+transform = Transform3D(1.6, 0, 0, 0, 1.4789773, 0, 0, 0, 1, 0, 0.7541977, 0)
+shape = SubResource("BoxShape3D_3y0ns")
+
+[editable path="chest_gold2"]

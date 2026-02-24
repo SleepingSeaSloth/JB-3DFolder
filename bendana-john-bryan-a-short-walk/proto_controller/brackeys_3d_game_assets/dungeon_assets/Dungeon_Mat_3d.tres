@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://chdcrda64675x"]
+
+[ext_resource type="Texture2D" uid="uid://bvhdp3f3fph3x" path="res://proto_controller/brackeys_3d_game_assets/dungeon_assets/dungeon_albedo.png" id="1_srnj4"]
+
+[resource]
+albedo_texture = ExtResource("1_srnj4")
+metallic = 0.1
+metallic_specular = 0.2
+roughness = 0.75

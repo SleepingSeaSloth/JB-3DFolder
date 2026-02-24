@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dhd0tlcstvvxy"]
+
+[ext_resource type="PackedScene" uid="uid://cfc3t0mer7i2a" path="res://proto_controller/brackeys_3d_game_assets/dungeon_assets/building/wall_corner.glb" id="1_hm60c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xdf3k"]
+size = Vector3(2.5092773, 3.9874268, 0.98828125)
+
+[node name="WallCorner" type="StaticBody3D" unique_id=1151348408]
+
+[node name="wall_corner2" parent="." unique_id=458618281 instance=ExtResource("1_hm60c")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=718460819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7375488, 2.0179985, 0.005859375)
+shape = SubResource("BoxShape3D_xdf3k")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2067566324]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.0019555688, 2.0179985, 0.76173544)
+shape = SubResource("BoxShape3D_xdf3k")

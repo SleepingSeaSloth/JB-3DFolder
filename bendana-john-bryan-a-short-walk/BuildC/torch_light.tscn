@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://6pw00wmqtkvq"]
+
+[ext_resource type="PackedScene" uid="uid://gugoyd1ks7hs" path="res://proto_controller/brackeys_3d_game_assets/dungeon_assets/props/torch_mounted.glb" id="1_hi1q8"]
+
+[node name="TorchLight" type="StaticBody3D" unique_id=1759605060]
+
+[node name="torch_mounted2" parent="." unique_id=1261647635 instance=ExtResource("1_hi1q8")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1454568395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01348114, 0.7336278, 0.99360025)
+light_color = Color(1, 0.4862745, 0, 1)
+light_energy = 2.3
+omni_range = 9.200571

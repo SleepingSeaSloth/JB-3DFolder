@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dvkp307ne6dne"]
+
+[ext_resource type="PackedScene" uid="uid://v1jh2tql0ta0" path="res://proto_controller/brackeys_3d_game_assets/dungeon_assets/props/coin_stack.glb" id="1_1bc43"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_m7gni"]
+radius = 0.50826067
+
+[node name="CoinStack" type="Node3D" unique_id=284329610]
+
+[node name="coin_stack" parent="." unique_id=1249158951 instance=ExtResource("1_1bc43")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=758464308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18308637, 0)
+shape = SubResource("SphereShape3D_m7gni")
