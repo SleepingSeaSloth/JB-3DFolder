@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b2ri3ux0b2vwu"]
+
+[ext_resource type="Texture2D" uid="uid://dqbuseft1c8r2" path="res://BuildC/Screenshot 2026-03-16 234802.png" id="1_k7fa2"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_47v4n"]
+particle_flag_rotate_y = true
+emission_shape = 1
+emission_sphere_radius = 1.0
+angle_min = -464.5
+angle_max = 379.40002
+direction = Vector3(1, 0, 1)
+initial_velocity_max = 0.5
+angular_velocity_min = -309.68002
+angular_velocity_max = 77.41998
+gravity = Vector3(0, -0.5, 0)
+radial_accel_min = -5.000002
+radial_accel_max = 4.9999976
+tangential_accel_min = -1.0700022
+tangential_accel_max = 1.0699978
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h12jx"]
+transparency = 2
+alpha_scissor_threshold = 0.9
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_k7fa2")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dwxvi"]
+material = SubResource("StandardMaterial3D_h12jx")
+size = Vector2(0.35, 0.35)
+orientation = 2
+
+[node name="LeafFall" type="Node3D" unique_id=1914437961]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1842058977]
+transform = Transform3D(3.2995532, 0, 0, 0, 2.235045, 0, 0, 0, 3.9279013, 0, 0, 0)
+amount = 25
+lifetime = 7.5
+randomness = 0.5
+trail_lifetime = 1.78
+process_material = SubResource("ParticleProcessMaterial_47v4n")
+draw_pass_1 = SubResource("PlaneMesh_dwxvi")

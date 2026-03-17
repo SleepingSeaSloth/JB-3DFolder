@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ckqgpuctknpus"]
+
+[ext_resource type="PackedScene" uid="uid://bqxne5upxhfhg" path="res://BuildC/PolyTree.glb" id="1_jk1wn"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5xos8"]
+height = 2.378418
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vgooa"]
+
+[node name="CollissionPT" type="Node3D" unique_id=568420980]
+
+[node name="PolyTree" parent="." unique_id=493872325 instance=ExtResource("1_jk1wn")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1534213630]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1713179283]
+transform = Transform3D(1.0217072, -2.524406, 0, 2.2762692, 1.1330836, 0, 0, 0, 2.9385412, 0.13304341, 0.99655807, -0.1222187)
+shape = SubResource("CylinderShape3D_5xos8")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" unique_id=874685416]
+transform = Transform3D(-0.48076412, 0.8044902, 1.3310182, 1.3953419, 0.4704084, 0, -0.401397, 0.67168075, -1.5941964, -1.9989964, 0.01889503, -1.3544661)
+shape = SubResource("CylinderShape3D_5xos8")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=47731818]
+transform = Transform3D(0.06176904, -0.103361726, 2.0666685, 1.3953418, 0.47040835, 0, -0.6232481, 1.042917, 0.20482409, -3.2888217, 4.074083, 0.6212033)
+shape = SubResource("CylinderShape3D_5xos8")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=2059038945]
+transform = Transform3D(-0.15438618, 0.18609889, 2.235519, 1.7747517, 0.43100148, 4.0478265e-15, -0.7814966, 0.9420253, -0.44163093, 0.276896, 0.11926556, -2.7662582)
+shape = SubResource("CylinderShape3D_5xos8")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=711148276]
+transform = Transform3D(-0.15070157, 1.1301092, 0.43597224, 0.5324193, 0.17836434, 0.15706007, 0.050921224, 1.4796289, -0.35191932, -1.2526023, -0.07779157, -5.5716877)
+shape = SubResource("CylinderShape3D_5xos8")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" unique_id=1878102405]
+transform = Transform3D(1.9294293, 0.6839933, 0.11148223, 0, -0.27605495, 1.7001015, 0.8498135, -1.5529487, -0.253111, 0.13219988, 8.971393, 1.7686505)
+shape = SubResource("CapsuleShape3D_vgooa")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D" unique_id=385651383]
+transform = Transform3D(1.9294293, 0.6839933, 0.11148223, 0, -0.27605495, 1.7001015, 0.8498135, -1.5529487, -0.253111, -1.8607379, 8.756985, -5.6559577)
+shape = SubResource("CapsuleShape3D_vgooa")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D" unique_id=560378023]
+transform = Transform3D(1.9294293, 0.6839933, 0.11148223, 0, -0.27605495, 1.7001015, 0.8498135, -1.5529487, -0.253111, -6.041012, 6.7459745, -5.6559577)
+shape = SubResource("CapsuleShape3D_vgooa")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="StaticBody3D" unique_id=771345494]
+transform = Transform3D(1.9294293, 0.6839933, 0.11148223, 0, -0.27605495, 1.7001015, 0.8498135, -1.5529487, -0.253111, -3.4623985, 10.9201145, 7.707434)
+shape = SubResource("CapsuleShape3D_vgooa")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="StaticBody3D" unique_id=1754114570]
+transform = Transform3D(-1.7131352, 1.2559891, 0.6637323, 0.32339838, -0.9692622, 1.3317162, 1.9517181, 1.2630601, 0.36193165, -3.0766287, 13.168301, -3.2739797)
+shape = SubResource("CapsuleShape3D_vgooa")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="StaticBody3D" unique_id=2093567633]
+transform = Transform3D(-9.301327, -1.229347, -0.051358223, -0.22295167, 0.17085789, 4.264342, -2.6094303, 4.367416, -0.18128176, -11.023998, 15.781171, 4.8587604)
+shape = SubResource("CapsuleShape3D_vgooa")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="StaticBody3D" unique_id=96603795]
+transform = Transform3D(-11.056577, -8.75991, 0.07632607, -0.39517492, 0.43170178, 5.504113, -13.074497, 7.394857, -0.23090687, -15.969194, 14.753007, -6.376788)
+shape = SubResource("CapsuleShape3D_vgooa")
