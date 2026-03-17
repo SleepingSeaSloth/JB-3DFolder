@@ -1228,4 +1228,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.695826, 13.550984, 5.844986
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4513426, 16.541302, -11.9408865)
 
 [node name="CollissionPT" parent="." unique_id=568420980 instance=ExtResource("35_2mu51")]
-transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 21.249657, 0.7861328, 0.99985814)
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 21.379097, 0.7861328, 1.0721295)
